@@ -24,3 +24,7 @@ echo 0 > /sys/class/leds/smc::kbd_backlight/brightness
 1. 启动虚拟机里的声音AC97
 2. 在client里安装驱动，可以从xp光盘或者vBox_NetAuto_Driver.iso里安装
 3. 如果安装驱动后还没有声音，需要从服务里启动Windows Audio的管理服务
+
+# 安装日式键盘
+1. Linux很简单，直接选择Japanese(日文)键盘布局
+2. Windows需要先更新键盘驱动成Japanese PS/2（列表里选择），然后添加键盘布局日语（日本）
