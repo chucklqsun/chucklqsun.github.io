@@ -18,4 +18,14 @@ You can always edit your last commit message, before pushing, by using:
 $ git commit --amend
 ```
 
+### How to merge specific files from other branch
+1. git checkout *branch-you-want-to-merge-to*
+2. git cherry-pick *branch-you-want-to-merge-from*
+__maybe you need solve code conflict here__
+3. git RESET HEAD   // To make all files untracked
+4. git add *files-you-want-to-merge*
+5. git commit -m "merge from xxxx"
+
+Good Luck!
+
 [ref1]: https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit "Squash All Commits Into Single Commit"

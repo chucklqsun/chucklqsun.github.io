@@ -34,3 +34,13 @@ echo 0 > /sys/class/leds/smc::kbd_backlight/brightness
 sudo adduser yourusername vboxsf
 ```
 注销，然后重新进入桌面就可以访问了。
+
+### 如果移动硬盘无法被载入进虚拟机
+在setting里设置载入移动硬盘，并且检查是否使用了USB3.0。
+
+## 递归文件夹并整理成树状结构
+brew install tree
+tree -I "__pycache__"   ## ignore folder __pycache__
+
+## 进入恢复模式（安装系统，重新分区等用途）
+Keyboard input: command + R
