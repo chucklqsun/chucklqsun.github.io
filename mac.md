@@ -44,3 +44,8 @@ tree -I "__pycache__"   ## ignore folder __pycache__
 
 ## 进入恢复模式（安装系统，重新分区等用途）
 Keyboard input: command + R
+
+## 杀死chromedriver的残余进程
+```
+ps aux | grep chromedriver | awk '{print $2}' | xargs kill -9
+```
