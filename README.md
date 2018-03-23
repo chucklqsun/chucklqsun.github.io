@@ -5,6 +5,7 @@
 3. [git skill][git.md]
 4. [prim related][prime.md]
 5. [mac related][mac.md]
+6. [Linux Nginx MariaDB PHP][LNMP.md]
 
 
 [docker.md]: ./docker.md "docker"
@@ -12,3 +13,4 @@
 [git_remove_sensitive_info.md]: ./git_remove_sensitive_info.md "remove password in git branch"
 [git.md]: ./git.md "git skill"
 [mac.md]: ./mac.md "mac skill"
+[LNMP.md]: ./LNMP.md "Linux Nginx MariaDB PHP"
