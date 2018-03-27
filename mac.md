@@ -82,4 +82,16 @@ Keyboard input: command + R
 ```
 ps aux | grep chromedriver | awk '{print $2}' | xargs kill -9
 ```
->>>>>>> 682751829dacefd3ddfd61298e21dd386ad9b9ae
+
+## Change Screenshot Format from default PNG to JPG
+```
+defaults write com.apple.screencapture type jpg;killall SystemUIServer
+```
+
+## Install Python3.4 by homebrew
+```
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/bd43f59bd50bb49242259f327cb6ac7a8dd59478/Formula/python3.rb
+```
+if pip install has permission issue, use --ignore-installed
+
+ROS installation need python2.7
