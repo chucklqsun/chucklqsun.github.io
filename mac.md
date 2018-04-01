@@ -95,3 +95,8 @@ brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/bd43f59bd5
 if pip install has permission issue, use --ignore-installed
 
 ROS installation need python2.7
+
+## 查看端口号占用的程序
+```
+lsof -n -i:$PORT | grep LISTEN
+```
