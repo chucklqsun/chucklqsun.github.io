@@ -1,3 +1,17 @@
+# Common Issue
+1. if log file is not regenerated, please restart the process
+
+## PHP from homebrew
+1. config:/private/etc/php-fpm.conf  
+2. restart php-fpm
+```
+brew services restart php71
+```
+3. Error: “Primary script unknown” is below issue:
+```
+ fastcgi_param SCRIPT_FILENAME  /Users/bartowski/project/laravel/public$fastcgi_script_name;
+```
+
 ## Nginx from homebrew
 
 Docroot is: /usr/local/var/www

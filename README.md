@@ -7,6 +7,7 @@
 5. [mac related][mac.md]
 6. [ubuntu related][ubuntu.md]
 7. [Linux Nginx MariaDB PHP][LNMP.md]
+8. [centos][centos.md]
 
 
 [docker.md]: ./docker.md "docker"
