@@ -17,3 +17,4 @@
 [mac.md]: ./mac.md "mac skill"
 [ubuntu.md]: ./ubuntu.md "ubuntu tips"
 [LNMP.md]: ./LNMP.md "Linux Nginx MariaDB PHP"
+[centos.md]: ./centos.md "CentOS"
