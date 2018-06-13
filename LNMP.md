@@ -12,6 +12,20 @@ brew services restart php71
  fastcgi_param SCRIPT_FILENAME  /Users/bartowski/project/laravel/public$fastcgi_script_name;
 ```
 
+## Install PHP extension
+### stomp
+1. 下载 $ wget http://pecl.php.net/get/stomp-1.0.5.tgz $ tar zxf stomp-1.0.5.tgz $ cd stomp-1.0.5 #通过phpize 生成编译所需配置文件 [注1]
+```
+$ /usr/bin/phpize
+```
+2. #编译安装三部曲: 1/configure 2/make 3/make install
+```
+$ ./configure --enable-stomp --with-php-config=/usr/bin/php-config
+$ make
+maybe then make install
+```
+3. modify /usr/local/etc/php/7.1/php.ini to add stomp.so
+
 ## Nginx from homebrew
 
 Docroot is: /usr/local/var/www
