@@ -2,7 +2,8 @@
 1. if log file is not regenerated, please restart the process
 
 ## PHP from homebrew
-1. config:/private/etc/php-fpm.conf  
+//1. config:/private/etc/php-fpm.conf ,  /private/etc/php-fpm.d/www.conf
+1. /usr/local/etc/php/7.1/php.ini
 2. restart php-fpm
 ```
 brew services restart php71
@@ -20,7 +21,8 @@ $ /usr/bin/phpize
 ```
 2. #编译安装三部曲: 1/configure 2/make 3/make install
 ```
-$ ./configure --enable-stomp --with-php-config=/usr/bin/php-config
+先要安装brew install openssl
+$ ./configure --enable-stomp --with-php-config=/usr/bin/php-config --with-openssl-dir=/usr/local/opt/openssl/
 $ make
 maybe then make install
 ```
