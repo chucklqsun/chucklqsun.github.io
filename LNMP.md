@@ -28,6 +28,15 @@ maybe then make install
 ```
 3. modify /usr/local/etc/php/7.1/php.ini to add stomp.so
 
+### PHP intl
+brew install homebrew/php/php70-intl
+
+### Warning: Module 'mcrypt' already loaded in Unknown on line 0
+```
+brew remove php71-mcrypt
+rm  /usr/local/etc/php/7.1/conf.d/ext-mcrypt.ini 
+```
+
 ## Nginx from homebrew
 
 Docroot is: /usr/local/var/www

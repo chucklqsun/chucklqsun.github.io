@@ -1,0 +1,13 @@
+server {
+listen 0.0.0.0:5622;
+server_name localhost;
+ 
+auth_basic "Kibana Auth";
+auth_basic_user_file /etc/nginx/passwd/kibana.passwd;
+access_log /var/log/nginx/access_kibana.logs;
+ 
+location / {
+	proxy_pass http://localhost:5601;
+#	proxy_redirect off;
+}
+}

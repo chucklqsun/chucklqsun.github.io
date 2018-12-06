@@ -1,0 +1,12 @@
+server {
+listen 0.0.0.0:4001;
+server_name localhost;
+ 
+access_log /var/log/nginx/access_angular.logs;
+	index index.html index.htm;
+	root /var/www/passkeeper-dist/dist;
+    location / {
+        try_files $uri $uri/ /index.html;
+        # This will allow you to refresh page in your angular app. Which will not give error 404.
+    }
+}
