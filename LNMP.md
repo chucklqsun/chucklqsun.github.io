@@ -34,7 +34,7 @@ brew install homebrew/php/php70-intl
 ### Warning: Module 'mcrypt' already loaded in Unknown on line 0
 ```
 brew remove php71-mcrypt
-rm  /usr/local/etc/php/7.1/conf.d/ext-mcrypt.ini 
+rm  /usr/local/etc/php/7.1/conf.d/ext-mcrypt.ini
 ```
 
 ## Nginx from homebrew
@@ -65,3 +65,10 @@ To have launchd start mariadb now and restart at login:
   brew services start mariadb
 Or, if you don't want/need a background service you can just run:
   mysql.server start
+
+## LDAP
+brew install openldap lmdb
+application: /usr/local/opt/openldap/
+config:  /usr/local/etc/openldap/
+
+/usr/libexec/slapd -d 255 -f /usr/local/etc/openldap/slapd.conf
